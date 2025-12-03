@@ -1,0 +1,113 @@
+/* ===================== RUST THEME ===================== */
+:root {
+  --rust-500: #B7410E;        /* Main rust color */
+  --rust-300: #d37a55;        /* Light rust shade */
+
+  --text-primary: #ffffff;    /* Main white text */
+  --text-secondary: #bbbbbb;  /* Subtle white */
+
+  --bg-primary: #0a0a0a;      /* Section background */
+  --bg-card: #000000;         /* Card pure black */
+  --border-color: #222;       /* Soft border */
+}
+
+/* ===================== ABOUT SECTION ===================== */
+
+.about-section {
+  min-height: 100vh;
+  padding: 100px 20px;
+  background: var(--bg-primary);
+}
+
+.section-title {
+  color: var(--rust-500);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  margin-top: 8px;
+  font-size: 1.1rem;
+}
+
+/* Grid layout */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-top: 3rem;
+}
+
+/* ===================== TEXT SECTION ===================== */
+
+.about-heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--rust-500);
+  margin-bottom: 1rem;
+}
+
+.about-description {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.about-description strong {
+  color: var(--rust-500);
+}
+
+/* ===================== HIGHLIGHT CARDS ===================== */
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.highlight-card {
+  background: var(--bg-card); /* PURE BLACK */
+  padding: 1.7rem;
+  border-radius: 14px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--rust-500);
+  box-shadow: 0 10px 30px rgba(183, 65, 14, 0.25);
+}
+
+.highlight-icon {
+  color: var(--rust-500);
+  margin-bottom: 1rem;
+}
+
+.highlight-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--rust-500);
+}
+
+.highlight-description {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media (max-width: 968px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-section {
+    padding: 70px 20px;
+  }
+}

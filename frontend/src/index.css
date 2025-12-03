@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family:
+        -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family:
+        source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;           /* Pure black */
+    --foreground: 0 0% 98%;          /* Soft white */
+    
+    --card: 0 0% 6%;                 /* Slightly lighter black */
+    --card-foreground: 0 0% 98%;
+    
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 98%;
+
+    /* RUST ACCENT COLORS 🔥 */
+    --primary: 18 74% 45%;           /* Rust orange (#b7410e style) */
+    --primary-foreground: 0 0% 98%;  /* White text on rust */
+
+    --accent: 18 70% 40%;            /* Slightly deeper rust */
+    --accent-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 13%;           /* Dark gray */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
+
+    --destructive: 0 65% 45%;        /* Deep red */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;              /* Subtle border visible on black */
+    --input: 0 0% 18%;
+    --ring: 18 74% 45%;              /* Rust ring outline */
+
+    /* Charts or additional colors */
+    --chart-1: 18 74% 45%;
+    --chart-2: 16 65% 40%;
+    --chart-3: 28 75% 55%;
+    --chart-4: 40 85% 58%;
+    --chart-5: 12 70% 48%;
+
+    --radius: 0.5rem;
+  }
+
+  /* Light mode version (optional) */
+  .light {
+    --background: 0 0% 97%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --primary: 18 74% 45%; 
+    --primary-foreground: 0 0% 100%;
+  }
+}
+
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+@layer base {
+    [data-debug-wrapper="true"] {
+        display: contents !important;
+    }
+
+    [data-debug-wrapper="true"] > * {
+        margin-left: inherit;
+        margin-right: inherit;
+        margin-top: inherit;
+        margin-bottom: inherit;
+        padding-left: inherit;
+        padding-right: inherit;
+        padding-top: inherit;
+        padding-bottom: inherit;
+        column-gap: inherit;
+        row-gap: inherit;
+        gap: inherit;
+        border-left-width: inherit;
+        border-right-width: inherit;
+        border-top-width: inherit;
+        border-bottom-width: inherit;
+        border-left-style: inherit;
+        border-right-style: inherit;
+        border-top-style: inherit;
+        border-bottom-style: inherit;
+        border-left-color: inherit;
+        border-right-color: inherit;
+        border-top-color: inherit;
+        border-bottom-color: inherit;
+    }
+}

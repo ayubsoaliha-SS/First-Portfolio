@@ -1,0 +1,139 @@
+/* ------------------------------
+   HERO SECTION
+------------------------------ */
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: #000; /* Pure dark black */
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+/* Main container */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* Text content */
+.hero-content {
+  flex: 1;
+}
+
+.hero-greeting {
+  font-size: 1.3rem;
+  opacity: 0.8;
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.hero-title {
+  font-size: 1.5rem;
+  color: #B7410E; /* Rust color */
+  margin-bottom: 15px;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 600px;
+  opacity: 0.9;
+}
+
+/* Buttons */
+.hero-buttons {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+.hero-btn {
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.hero-btn.primary {
+  background: #B7410E; /* Rust */
+  border: none;
+  color: white;
+}
+
+.hero-btn.secondary {
+  border: 2px solid #B7410E; /* Rust */
+  color: #B7410E; /* Rust */
+}
+
+/* Image section */
+.hero-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image-wrapper {
+  width: 350px;   /* increase from 250px */
+  height: 350px;  /* increase from 250px */
+  border-radius: 50%;
+  overflow: hidden;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #B7410E;
+}
+
+.hero-image-placeholder {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #B7410E; /* Rust initials */
+}
+
+/* Scroll Icon */
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #B7410E; /* Rust scroll icon */
+  text-decoration: none;
+}
+
+.scroll-icon {
+  animation: bounce 2s infinite;
+}
+
+/* Animation */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+  100% { transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+}

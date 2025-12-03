@@ -1,0 +1,22 @@
+:root {
+  /* Rust Color System */
+  --emerald-50: #fff8f2;
+  --emerald-100: #fde9d9;
+  --emerald-200: #f8c9a9;
+  --emerald-300: #ef9d6b;
+  --emerald-400: #e5733a;
+  --emerald-500: #cc5500; /* RUST */
+  --emerald-600: #b04a00;
+  --emerald-700: #8c3c00;
+  --emerald-800: #6a2e00;
+  --emerald-900: #4a2000;
+
+  /* Dark Theme Colors */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #1a1a1a;
+  --bg-card: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #a3a3a3;
+  --text-muted: #737373;
+  --border-color: rgba(204, 85, 0, 0.2); /* Updated for rust */
+}
