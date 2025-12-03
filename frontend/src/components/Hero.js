@@ -38,11 +38,11 @@ const Hero = () => {
         <div className="hero-image-container">
           <div className="hero-image-wrapper">
             <img
-              src="/soalihadir -Force
-.jpg"       // <--- place your image inside public/ folder
-              alt="Soaliha Ayub"
-              className="hero-image"
-            />
+             
+  src={process.env.PUBLIC_URL + '/soaliha.jpg'}
+  alt="Soaliha"
+  className="hero-image"
+/>
           </div>
         </div>
       </div>
