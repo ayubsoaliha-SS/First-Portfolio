@@ -4,7 +4,7 @@ import './Hero.css';
 
 const Hero = () => {
   const handleResumeDownload = () => {
-    const resumeUrl = `${process.env.PUBLIC_URL}/Soaliha-Ayub-Resume.pdf`;
+    const resumeUrl = `${process.env.PUBLIC_URL}/Soaliha-Ayub-Resume(4).pdf`;
 
     // Open resume in a new tab
     window.open(resumeUrl, '_blank', 'noopener,noreferrer');
