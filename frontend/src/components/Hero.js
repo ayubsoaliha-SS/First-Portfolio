@@ -4,7 +4,7 @@ import './Hero.css';
 
 const Hero = () => {
   const handleResumeDownload = () => {
-    const resumeUrl = `${process.env.PUBLIC_URL}/Soaliha-Ayub-Resume(4).pdf`;
+    const resumeUrl = `${process.env.PUBLIC_URL}/Soaliha-Ayub-Resume.pdf`;
 
     // Open resume in a new tab
     window.open(resumeUrl, '_blank', 'noopener,noreferrer');
@@ -12,7 +12,7 @@ const Hero = () => {
     // Trigger download
     const link = document.createElement('a');
     link.href = resumeUrl;
-    link.download = 'Soaliha-Ayub-Resume(4).pdf';
+    link.download = 'Soaliha-Ayub-Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
