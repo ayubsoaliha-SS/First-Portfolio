@@ -15,13 +15,13 @@ const GitHubStats = () => {
 
             {/* GitHub Stats Card */}
             <img 
-              src="https://github-readme-stats.vercel.app/api?username=ayubsoaliha-SS&show_icons=true&theme=tokyonight&cache_seconds=60" 
+              src={`https://github-readme-stats.vercel.app/api?username=${githubUsername}&show_icons=true&theme=tokyonight&cache_seconds=60`} 
               alt="GitHub Stats"
             />
 
             {/* GitHub Streak Card */}
             <img 
-              src="https://streak-stats.demolab.com?user=ayubsoaliha-SS&theme=tokyonight&cache_seconds=60" 
+              src={`https://streak-stats.demolab.com?user=${githubUsername}&theme=tokyonight&cache_seconds=60`} 
               alt="GitHub Streak"
             />
 
@@ -30,7 +30,7 @@ const GitHubStats = () => {
           {/* Contribution Graph */}
           <div className="calendar-wrapper">
             <img
-              src="https://github-readme-activity-graph.vercel.app/graph?username=ayubsoaliha-SS&theme=tokyo-night&area=true"
+              src={`https://github-readme-activity-graph.vercel.app/graph?username=${githubUsername}&theme=tokyo-night&area=true`}
               alt="GitHub Contribution Graph"
               className="github-calendar"
             />

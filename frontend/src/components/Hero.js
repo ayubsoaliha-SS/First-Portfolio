@@ -4,9 +4,15 @@ import './Hero.css';
 
 const Hero = () => {
   const handleResumeDownload = () => {
+    const resumeUrl = `${process.env.PUBLIC_URL}/Soaliha-Ayub-Resume.pdf`;
+
+    // Open resume in a new tab
+    window.open(resumeUrl, '_blank', 'noopener,noreferrer');
+
+    // Trigger download
     const link = document.createElement('a');
-    link.href = '/Soaliha-Ayub-Resume.pdf';
-    link.download = 'Soaliha-Ayub-Resume.pdf';
+    link.href = resumeUrl;
+    link.download = 'Soaliha-Ayub-Resume(4).pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -23,26 +29,27 @@ const Hero = () => {
             Passionate about building modern, scalable web applications with cutting-edge technologies.
             Specialized in React, Node.js, and MongoDB to create seamless user experiences.
           </p>
+
           <div className="hero-buttons">
             <button className="hero-btn primary" onClick={handleResumeDownload}>
               <Download size={20} />
               Download Resume
             </button>
+
             <a href="#contact" className="hero-btn secondary">
               Get In Touch
             </a>
           </div>
         </div>
 
-        {/* 🔥 Replaced placeholder with real image */}
+        {/* Profile Image */}
         <div className="hero-image-container">
           <div className="hero-image-wrapper">
             <img
-             
-  src={process.env.PUBLIC_URL + '/soaliha.jpg'}
-  alt="Soaliha"
-  className="hero-image"
-/>
+              src={process.env.PUBLIC_URL + '/soaliha.jpg'}
+              alt="Soaliha"
+              className="hero-image"
+            />
           </div>
         </div>
       </div>

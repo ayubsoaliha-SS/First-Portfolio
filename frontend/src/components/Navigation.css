@@ -105,10 +105,17 @@
   cursor: pointer;
   padding: 0.5rem;
 }
+.nav-links {
+  flex-wrap: wrap;
+}
 
 /* ============== MOBILE ============== */
 
 @media (max-width: 768px) {
+
+  .nav-links {
+    flex-direction: column;
+  }
   .nav-container {
     padding: 0 1rem;
   }

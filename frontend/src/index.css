@@ -11,6 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -125,3 +131,48 @@ code {
         border-bottom-color: inherit;
     }
 }
+@media (max-width: 768px) {
+  section {
+    padding: 3rem 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}
+/* ===============================
+   Mobile-First Flex/Grid Helpers
+   =============================== */
+
+.flex,
+.flex-row,
+.row {
+  display: flex;
+  flex-wrap: wrap; /* 🔥 prevents overflow on mobile */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr; /* mobile-first */
+  gap: 1rem;
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+

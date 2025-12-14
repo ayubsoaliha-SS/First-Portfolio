@@ -19,4 +19,19 @@
   --text-secondary: #a3a3a3;
   --text-muted: #737373;
   --border-color: rgba(204, 85, 0, 0.2); /* Updated for rust */
+/* 🔹 Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* 🚫 stop horizontal scroll */
+  font-family: 'Inter', sans-serif;
+}
+
 }

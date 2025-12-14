@@ -18,15 +18,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 4rem;
-  max-width: 1200px;
-  width: 100%;
+  gap: 2rem;
+  flex-wrap: wrap; /* 🔥 */
 }
 
 /* Text content */
-.hero-content {
-  flex: 1;
-}
+.hero-content ,
+
 
 .hero-greeting {
   font-size: 1.3rem;
@@ -82,9 +80,7 @@
 
 /* Image section */
 .hero-image-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+  flex: 1 1 300px;
 }
 
 .hero-image-wrapper {
@@ -135,5 +131,16 @@
 
   .hero-buttons {
     justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
